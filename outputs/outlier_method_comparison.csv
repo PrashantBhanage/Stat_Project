@@ -1,0 +1,3 @@
+variable,n,z_score_flag_count,iqr_flag_count,both_methods_count,z_score_only_count,iqr_only_count,iqr_lower_fence,iqr_upper_fence
+clean_energy_finance_all_usd_m,2295,60,334,60,0,274,-116.8725,194.8675
+re_capacity_all_w_per_capita,2250,50,276,50,0,226,-248.576265,447.862615

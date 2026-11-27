@@ -1,10 +1,8 @@
-# Generated figure files
+# Generated figures
 
-Run `notebooks/Group_08_Notebook.ipynb` from the repository root with the instructor workbook located at `data/Group_08_Dataset.xlsx`.
+The notebook generates these PNG figures in this directory:
 
-The notebook generates the following requested charts in this directory:
+- [top_10_countries_finance.png](top_10_countries_finance.png) — cumulative country/area finance ranking for 2010–2024, with observed-year labels.
+- [finance_vs_renewable_share.png](finance_vs_renewable_share.png) — pairwise-complete finance versus renewable-share scatter plot with log1p finance scale and correlation values.
 
-- `top_10_countries_finance.png`
-- `finance_vs_renewable_share.png`
-
-The source workbook must remain private to Group 8. The PNGs have been generated and visually checked in the project handoff package. Their binary upload to this GitHub directory remains pending; no empty or placeholder image files are used.
+Both required PNG files are committed and available in this repository. Run the notebook from the repository root with the original workbook placed locally at `data/Group_08_Dataset.xlsx` to regenerate them.

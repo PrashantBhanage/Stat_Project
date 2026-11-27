@@ -1,4 +1,4 @@
-# Phase 5 — Visualisations and SDG Interpretation
+# Group Task Phase 5 (Repository Phase 4) — Visualisations and SDG Interpretation
 
 **Project:** Group 8 — International Finance for Clean Energy  
 **Course:** AS5004 Foundational Statistics for AI  
@@ -6,7 +6,7 @@
 **Dataset:** 2,295 country/area-year observations, 153 countries/areas, 2010–2024  
 **Units:** Million constant 2023 US dollars for finance.
 
-## 1. Introduction
+**Numbering note:** The handout labels this work Group Task Phase 5. The repository project plan labels it Phase 4 — Visualisation and SDG interpretation; repository Phase 5 is machine learning.\n\n## 1. Introduction
 This analysis examines the distribution of recorded international clean-energy finance, differences across countries and continents, and its pooled relationship with renewable energy share. The workbook Data Dictionary defines clean_energy_finance_all_usd_m as international financial flows supporting clean-energy R&D and renewable-energy production, including hybrid systems, and maps it to SDG indicator 7.a.1.
 
 ## 2. Objectives
@@ -67,3 +67,8 @@ Recorded international clean-energy finance varies substantially across country-
 
 ## Data Dictionary and source notes
 The workbook attributes 7.a.1 financial flows to OECD DAC Statistics (2025) and the IRENA Public Finance Database (2026); 7.1.1 electricity access to the World Bank; 7.2.1 renewable share to IEA World Energy Balances (2025) and UN Statistics Division Energy Balances (2025); and 7.b.1 capacity to IRENA electricity-capacity data with population from UN World Population Prospects. Cite the workbook and relevant custodian agencies in the final submission.
+
+
+## Machine-learning threshold correction
+
+The ML workflow now splits country groups before calculating the renewable-share threshold. The median is calculated from the training observations only (**25.01%** for the recorded split) and then applied unchanged to both training and test observations. This avoids using the held-out target distribution to define the classes.

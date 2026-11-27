@@ -1,0 +1,2 @@
+train_rows,test_rows,train_countries,test_countries,training_median_threshold_pct,country_overlap
+1578,533,110,37,25.01,0

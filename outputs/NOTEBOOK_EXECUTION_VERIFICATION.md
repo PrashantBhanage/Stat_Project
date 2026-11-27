@@ -1,9 +1,11 @@
-# Notebook execution verification
+# Notebook execution verification — implementation QA
 
-- GitHub source notebook: `notebooks/Group_08_Notebook.ipynb` — 19 cells, 9 code cells, with the current outlier export, group/repository phase mapping, top-10 and correlation logic, corrected train-only ML cutoff, and final validation code.
-- Local executed notebook: `notebooks/Group_08_Notebook_executed.ipynb` — 19 cells, 9 code cells executed, zero cell errors.
-- Verification result from the top-to-bottom local run: 10 top-10 rows; 2,171 pairwise-complete finance/share observations; 610 flagged country-year-variable records across the two outlier variables; 110 training countries and 37 held-out countries with zero overlap; training-derived threshold 25.01%; 8/8 requested output files found.
-
-The **executed notebook with saved outputs is included in the downloadable corrected project package**. The notebook currently stored in GitHub is the reproducible source version; it does not embed the local run's execution outputs. The source workbook remains private to Group 8 as required by its README and is not committed to this public repository.
-
-A second clean-environment run by another group member remains recommended.
+- Source notebook: `notebooks/Group_08_Notebook.ipynb`.
+- Locally executed notebook: `notebooks/Group_08_Notebook_executed.ipynb` in the corrected project handoff package.
+- Workbook: original Group 8 file, read locally from `data/Group_08_Dataset.xlsx`; intentionally not committed because the source workbook README says to keep it within the group.
+- Notebook size: **21 cells**, including **9 code cells**.
+- Local top-to-bottom run: **9/9 code cells executed; 0 errors**.
+- Recreated outputs include: Phase 2 statistical tables; Phase 3 Z-score/IQR flags; Phase 4 histograms, boxplots, continent plots, top-10 ranking and finance/share correlation; Phase 5 country-grouped ML, threshold and error review.
+- Figures `outputs/figures/top_10_countries_finance.png` and `outputs/figures/finance_vs_renewable_share.png` are committed and verified as repository files.
+- Source notebook code cells are deliberately kept reproducible; the locally executed copy in the handoff ZIP contains saved outputs.
+- This local run is implementation QA, not final submission acceptance. **Repository Phase 6 remains not started**; the group will perform repeated tests in its own environment(s) before submission.

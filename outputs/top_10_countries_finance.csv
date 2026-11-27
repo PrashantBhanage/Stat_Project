@@ -1,0 +1,11 @@
+country,iso3,continent,total_finance_musd,observed_years,first_year,last_year,finance_observations
+India,IND,Asia,24962.39,15,2010,2024,15
+Pakistan,PAK,Asia,11875.51,15,2010,2024,15
+Türkiye,TUR,Asia,11483.67,15,2010,2024,15
+South Africa,ZAF,Africa,9352.12,15,2010,2024,15
+Brazil,BRA,South America,8823.85,15,2010,2024,15
+Argentina,ARG,South America,7853.93,15,2010,2024,15
+Indonesia,IDN,Asia,7661.79,15,2010,2024,15
+Egypt,EGY,Africa,7547.60,15,2010,2024,15
+Lao People's Democratic Republic,LAO,Asia,7355.67,15,2010,2024,15
+Morocco,MAR,Africa,6608.58,15,2010,2024,15

@@ -16,6 +16,11 @@ This analysis examines the distribution of recorded international clean-energy f
 - Interpret results against SDG 7.a using the Data Dictionary's indicator definitions.
 
 ## 3. Visualisation methodology
+
+- [Top 10 cumulative finance chart](figures/top_10_countries_finance.png)
+- [Finance versus renewable share scatter plot](figures/finance_vs_renewable_share.png)
+
+## 3. Visualisation methodology
 Finance distributions use log1p where needed to display the long right tail while retaining zeros. The scatter plot uses pairwise complete finance/share observations (n=2,171); missing values are excluded only from calculations requiring those variables. The raw workbook is not changed. Country totals are sums over observed years, and all country/areas have 15 finance observations (2010–2024) in this dataset. Potential IQR extremes are retained, not automatically deleted.
 
 ## 4. Important findings
@@ -72,3 +77,18 @@ The workbook attributes 7.a.1 financial flows to OECD DAC Statistics (2025) and 
 ## Machine-learning threshold correction
 
 The ML workflow now splits country groups before calculating the renewable-share threshold. The median is calculated from the training observations only (**25.01%** for the recorded split) and then applied unchanged to both training and test observations. This avoids using the held-out target distribution to define the classes.
+
+
+## Repository Phase 5 — Machine-learning results (separate from this handout task)
+
+The machine-learning workflow splits country groups before calculating the target threshold. The renewable-share median is calculated on training observations only (**25.01%**) and applied unchanged to both sets. The split contains **1,578 training rows / 110 countries** and **533 test rows / 37 countries**, with zero country overlap.
+
+| Metric | Majority baseline | Logistic regression |
+|---|---:|---:|
+| Accuracy | 39.02% | 75.98% |
+| Precision (high class) | 0.00% | 87.45% |
+| Recall (high class) | 0.00% | 70.77% |
+
+The logistic model correctly classifies **405/533** held-out observations. Its confusion matrix is TN=175, FP=33, FN=95 and TP=230. It makes 128 errors, affecting 19 of the 37 held-out countries. The baseline predicts the training-majority low class; the held-out sample has 208 low and 325 high observations, so the baseline accuracy is 39.02%.
+
+The logistic regression outperforms this baseline on the fixed split. However, the result may vary across country splits and requires repeated grouped testing or grouped cross-validation before stronger claims about generalisation. The model estimates a classification association, not a causal effect of international finance.

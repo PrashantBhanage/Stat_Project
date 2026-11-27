@@ -6,7 +6,9 @@
 **Dataset:** 2,295 country/area-year observations, 153 countries/areas, 2010–2024  
 **Units:** Million constant 2023 US dollars for finance.
 
-**Numbering note:** The handout labels this work Group Task Phase 5. The repository project plan labels it Phase 4 — Visualisation and SDG interpretation; repository Phase 5 is machine learning.\n\n## 1. Introduction
+**Numbering note:** The handout labels this work Group Task Phase 5. The repository project plan labels it Phase 4 — Visualisation and SDG interpretation; repository Phase 5 is machine learning.
+
+## 1. Introduction
 This analysis examines the distribution of recorded international clean-energy finance, differences across countries and continents, and its pooled relationship with renewable energy share. The workbook Data Dictionary defines clean_energy_finance_all_usd_m as international financial flows supporting clean-energy R&D and renewable-energy production, including hybrid systems, and maps it to SDG indicator 7.a.1.
 
 ## 2. Objectives

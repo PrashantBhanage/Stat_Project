@@ -1,0 +1,2 @@
+notebook_cells,code_cells_executed,top10_rows,finance_share_pairwise_n,pearson_raw,pearson_log1p,spearman_raw,outlier_flagged_rows,train_countries,test_countries,country_overlap,train_only_target_median_pct,required_output_files,missing_output_files
+19,9,10,2171,0.0182204432,0.1689707598,0.2580243229,610,110,37,0,25.01,8,0

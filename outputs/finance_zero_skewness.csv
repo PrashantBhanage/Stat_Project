@@ -1,0 +1,6 @@
+variable,n,zero_count,zero_percent,skewness
+clean_energy_finance_all_usd_m,2295,478,20.82788671,6.089405151
+finance_solar_usd_m,2295,1129,49.19389978,8.150640939
+finance_wind_usd_m,2295,1972,85.92592593,13.554024415
+finance_hydropower_usd_m,2295,1700,74.07407407,13.002241955
+finance_bioenergy_usd_m,2295,1925,83.87799564,10.495086643

@@ -1,0 +1,11 @@
+partition,train_rows,test_rows,train_countries,test_countries,country_overlap_count,train_target_median_pct,training_low_count,training_high_count,baseline_tie,baseline_tie_break
+42,1578,533,110,37,0,25.009999999999998,789,789,True,low
+43,1585,526,110,37,0,27.7,793,792,False,
+44,1578,533,110,37,0,27.36,789,789,True,low
+45,1580,531,110,37,0,27.53,790,790,True,low
+46,1579,532,110,37,0,29.52,790,789,False,
+47,1578,533,110,37,0,28.18,789,789,True,low
+48,1583,528,110,37,0,26.18,792,791,False,
+49,1581,530,110,37,0,24.15,791,790,False,
+50,1583,528,110,37,0,26.18,792,791,False,
+51,1580,531,110,37,0,29.66,790,790,True,low

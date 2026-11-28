@@ -1,0 +1,6 @@
+partition,train_rows,test_rows,train_countries,test_countries,country_overlap_count,train_target_median_pct,training_low_count,training_high_count,baseline_tie,baseline_tie_break
+1,1680,431,117,30,0,27.175,840,840,True,low
+2,1682,429,117,30,0,25.53,841,841,True,low
+3,1694,417,118,29,0,27.595,847,847,True,low
+4,1694,417,118,29,0,27.325,847,847,True,low
+5,1694,417,118,29,0,32.805,847,847,True,low

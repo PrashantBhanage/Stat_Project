@@ -1,0 +1,64 @@
+Source observations: 2295; complete modelling rows: 2111; countries: 147
+Repeated split country overlap maximum: 0
+GroupKFold country overlap maximum: 0
+
+Repeated split metrics (percentages):
+ random_state  threshold_train_median_pct  model_accuracy  model_precision  model_recall  model_f1  baseline_accuracy
+           42                       25.01        0.759850         0.874525      0.707692  0.782313           0.390244
+           43                       27.70        0.783270         0.968354      0.583969  0.728571           0.501901
+           44                       27.36        0.829268         0.923767      0.735714  0.819085           0.474672
+           45                       27.53        0.792844         0.905000      0.665441  0.766949           0.487759
+           46                       29.52        0.778195         0.740741      0.720721  0.730594           0.582707
+           47                       28.18        0.840525         0.819549      0.854902  0.836852           0.521576
+           48                       26.18        0.816288         0.908000      0.754153  0.823956           0.429924
+           49                       24.15        0.760377         0.915709      0.694767  0.790083           0.350943
+           50                       26.18        0.763258         0.841085      0.720930  0.776386           0.429924
+           51                       29.66        0.796610         0.795699      0.678899  0.732673           0.589454
+
+Repeated summary (mean, sample SD, min, max; percentages):
+              model    metric      mean  sd_sample       min       max
+Logistic regression  accuracy 84.052533  84.052533 84.052533 84.052533
+Logistic regression precision 96.835443  96.835443 96.835443 96.835443
+Logistic regression    recall 85.490196  85.490196 85.490196 85.490196
+Logistic regression        f1 83.685221  83.685221 83.685221 83.685221
+  Majority baseline  accuracy 58.945386  58.945386 58.945386 58.945386
+  Majority baseline precision  0.000000   0.000000  0.000000  0.000000
+  Majority baseline    recall  0.000000   0.000000  0.000000  0.000000
+  Majority baseline        f1  0.000000   0.000000  0.000000  0.000000
+
+GroupKFold fold metrics (percentages):
+ partition  threshold_train_median_pct  model_accuracy  model_precision  model_recall  model_f1  baseline_accuracy  country_overlap
+         1                      27.175        0.756381         0.992366      0.555556  0.712329           0.457077                0
+         2                      25.530        0.785548         0.908654      0.721374  0.804255           0.389277                0
+         3                      27.595        0.750600         0.757143      0.750000  0.753555           0.491607                0
+         4                      27.325        0.851319         0.940217      0.772321  0.848039           0.462830                0
+         5                      32.805        0.832134         0.608696      0.736842  0.666667           0.772182                0
+
+GroupKFold summary (mean, sample SD, min, max; percentages):
+              model    metric      mean  sd_sample       min       max
+Logistic regression  accuracy 85.131894  85.131894 85.131894 85.131894
+Logistic regression precision 99.236641  99.236641 99.236641 99.236641
+Logistic regression    recall 77.232143  77.232143 77.232143 77.232143
+Logistic regression        f1 84.803922  84.803922 84.803922 84.803922
+  Majority baseline  accuracy 77.218225  77.218225 77.218225 77.218225
+  Majority baseline precision  0.000000   0.000000  0.000000  0.000000
+  Majority baseline    recall  0.000000   0.000000  0.000000  0.000000
+  Majority baseline        f1  0.000000   0.000000  0.000000  0.000000
+
+Continent FN/FP across repeated splits:
+    continent  test_exposures  false_negatives  false_positives  error_rate
+         Asia            1271              246              107    0.277734
+       Africa            1990              184               99    0.142211
+South America             507              124               18    0.280079
+North America             733               92               34    0.171896
+      Oceania             510               80               34    0.223529
+       Europe             294               75               10    0.289116
+
+Continent FN/FP across GroupKFold:
+    continent  test_exposures  false_negatives  false_positives  error_rate
+         Asia             524               92               40    0.251908
+       Africa             778               55               41    0.123393
+      Oceania             240               50               14    0.266667
+North America             288               45               11    0.194444
+South America             169               34               12    0.272189
+       Europe             112               30                9    0.348214
